@@ -5,6 +5,13 @@ jobs:
   run-kickoff-build:
     runs-on: ubuntu-latest
   steps:
+    - uses: action/checkout@v3
+    - name: Setup JDK-17
+      uses: action/setup-java@v3
+      with:
+        java-version: 17
+        distribution: 'temurin'
+        cache: maven
     - name: Maven Build
       run: |
-        echo "stub"
+        mvn -B package --file=pom.xml clean compile 
