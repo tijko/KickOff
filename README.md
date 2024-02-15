@@ -1,3 +1,5 @@
+[![KickOff](https://github.com/tijko/KickOff/actions/workflows/main.yml/badge.svg)](https://github.com/tijko/KickOff/actions/workflows/main.yml)
+
 # Getting Started
 
 ### Reference Documentation
