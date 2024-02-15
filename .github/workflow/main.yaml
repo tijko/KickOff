@@ -1,0 +1,10 @@
+name: KickOff
+run-name: ${{ github.run_number }} pushed 
+on: [push]
+jobs:
+  run-kickoff-build:
+    runs-on: ubuntu-latest
+  steps:
+    - name: Maven Build
+      run: |
+        echo "stub"
